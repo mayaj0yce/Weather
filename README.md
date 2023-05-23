@@ -1,1 +1,1 @@
-# Weather
+creating the app to look up weather patterns
