@@ -2,77 +2,103 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <title>the Weather</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>the Weather</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-        <header class="p-5 text-center text-white bg-primary">
-          <h1>what the weather will be</h1>
-        </header>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                One of three columns
+  <header class="p-5 text-center text-white bg-primary">
+    <h1 class=""><i class=""></i>Local Weather</h1>
+    <p>Search a city for its current local weather!</p>
+  </header>
+
+
+  <main class="">
+    <!-- Place your content for the "Locations" column here -->
+    <div class="container">
+      <div class="container"></div>
+      <div class="column locations">
+        <h2>Search for a City</h2>
+        <div id="city-search" class="btn">
+          <input type="text" id="EnterCity" placeholder="Enter city name">
+          <button id="searchButton" class="btn">Search</button>
+
+        </div>
+      </div>
+
+      <div class="column forecast">
+        <h2> Current Weather in:</h2>
+        <div class="current-forecast">
+          <!--put the current day's forecast here-->
+        </div>
+
+
+        <!-- Place your content for the second row of the "5-Day Forecast" column here -->
+        <h2> Four Day Forecast:</h2>
+        <div class="current-forecast">
+          <!--put the current day's forecast here-->
+        </div>
+
+        <div class="row">
+          <!-- Place your content for the first row of the "5-Day Forecast" column here -->
+          <div class="col-day">
+            <div class="forecast-panel">
+              <h3 class="forecast-panel-title"></h3>
+            </div>
+          </div>
+
+
+          <div class="rows">
+            <div class="grid-container">
+              <div class="header">Day 2 Header
+                <div class="grid-item">Day2</div>
               </div>
-              <div class="col-sm">
-                One of three columns
+
+              <div class="header">Day 3 Header
+                <div class="grid-item">Day3</div>
               </div>
-              <div class="col-sm">
-                One of three columns
+
+              <div class="header">Day 4 Header
+                <div class="grid-item">Day4</div>
+              </div>
+
+              <div class="header">Day 5 Header
+                <div class="grid-item">Day5</div>
+              </div>
+
+              <!-- add button here and search bar -->
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <!-- Place your content for the first row of the "5-Day Forecast" column here -->
+            <div class="col-day">
+              <div class="forecast-panel">
+                <h3 class="forecast-panel-title"></h3>
               </div>
             </div>
           </div>
-  
-        <main class=" containerflex-row justify-center align-center col-auto p-4 bg-gray">
-            <div class="row card card-rounded col-7 bg-gray">
-              <header class="col-sm card-header text-center">
-          <h2 class="text-white">
-            locate
-<!-- add button here and search bar -->
-          </h2>
-        </header>
-       
-        <div class="p-3">
-          <p class="card-body">
-            The status for the fetch request is listed with the value of 200.
-            <br/> 
-            This confirms that the fetch request is successful.      
-            <span id="response-text"></span>
-          </p>
-        </div>
-    </div>
-    </main>
-    <main class=" containerflex-row justify-center align-center col-auto p-4 bg-gray">
-        <div class="row card card-rounded col-7 bg-gray">
-          <header class="col-sm card-header text-center">
-            <h2 class="text-white">
-              locate
-            </h2>
-          </header>
-          <div class="p-3">
-            <p class="card-body">
-              The status for the fetch request is listed with the value of 200.
-              <br/> 
-              This confirms that the fetch request is successful.      
-              <span id="response-text"></span>
-            </p>
-          </div>
-        </div>
-      </main>
+          <div class="rows">
+            <div class="grid-container">
+              <div class="grid-item"></div>
 
-    <!-- <h2>Last Saved Grade</h2>
-      <p>Student's Name: <span id="saved-name"></span></p>
-      <p>Grade: <span id="saved-grade"></span></p>
-      <p>Comment: <span id="saved-comment"></span></p> -->
+            </div>
 
-
-    <script src="assets/js/script.js"></script>
-  </body>
-</html>
-
-      
+            <div id="resultContainer">
+              <h3>Search History</h3>
+              <ul id="cityList" class="btn">
+                <!--LIST previously Searched CITIES-->
+              </ul>
+              <button id="clearSearchButton" class="btn">Clear Search History</button>
+            </div>
+          
+          <script src="assets/js/script2.js"></script>
+        </body>
+      </html>
