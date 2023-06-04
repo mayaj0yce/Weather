@@ -1,4 +1,4 @@
-var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=45b1c3fdaea8e8d0b6ee28b6edef4eaf';
+var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={myKey};
  
 console.log(requestURL)
 

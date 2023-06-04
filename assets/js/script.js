@@ -1,6 +1,6 @@
 const date = new Date();
 console.log(date);
-var requestUrl = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=45b1c3fdaea8e8d0b6ee28b6edef4eaf';
+var requestUrl = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk6edef4eaf';
 
 var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
