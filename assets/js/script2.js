@@ -1,8 +1,8 @@
-var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={myKey};
+var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=45b1c3fdaea8e8d0b6ee28b6edef4eaf';
  
 console.log(requestURL)
 
-var cityName =  document.getElementById("searchButton");
+var cityName =  document.getElementById("F");
 
 
 console.log(cityName)
