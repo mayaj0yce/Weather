@@ -11,6 +11,21 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<header class="header1 text-center"> 
+<p> Weather Search</p>
+</header>
+<body>
+  <main>
+    <container id="searchField">
+      <input type="text" id="cityFound" placeholder="Enter City & Search">
+      <button class="btn" id="searchButton">Enter</button>
+    </container>
+  </main>
+
+
+</body>
+
+
 <body>
   <header class="p-5 text-center text-white bg-primary">
     <h1 class=""><i class=""></i>Local Weather</h1>
@@ -42,7 +57,7 @@
       </div>
 
        <section>
-        <div class="">
+        <div class="span">
 
           <div class="col-day">
             <div class="forecast-panel">
@@ -85,7 +100,10 @@
           <div class="grid-item"></div>
         </div>
       </div>
-      <div id="resultContainer">
+
+
+
+      <div id="resultContainerHistory">
         <h3>Search History</h3>
         <ul id="cityList" class="btn">
           <!--LIST previously Searched CITIES-->
